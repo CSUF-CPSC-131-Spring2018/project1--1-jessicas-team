@@ -4,4 +4,5 @@ Project 1
 Group members:
 
 Jessica Vargas: mvrgsj@csu.fullerton.edu
+
 Tommy Huynh: tommyh@csu.fullerton.edu
