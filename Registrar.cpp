@@ -39,7 +39,7 @@ Student& Registrar::getStudent(string cwid) const {
 			index++;
 		}
 	}
-	throw invalid_arguement;
+	throw invalid_arguement("cwid is Invalid");
 }
 
 // process a line from the text file
