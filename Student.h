@@ -20,5 +20,5 @@ private:
 	string Tcourse[50];
 	char Cgrade[50];
 	
-	friendclass Registrar;
+	friend class Registrar;
 };
