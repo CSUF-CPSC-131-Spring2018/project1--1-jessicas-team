@@ -24,7 +24,7 @@ void Student::addCourseGrade (const string &courseName, char grade) {
 	//COMPLETED
 	//allocates new mem for courseName and grade.
 	Tcourse[courseNum]= courseName;
-	Ccourse[courseNum]= grade;
+	Cgrade[courseNum]= grade;
 	courseNum++; //increases course grade amount by 1.
 }
 
