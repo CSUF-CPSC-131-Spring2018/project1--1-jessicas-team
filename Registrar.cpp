@@ -47,6 +47,15 @@ Student& Registrar::getStudent(string cwid) const {
 //if student does not exist, then adds student to student array and updates size
 void Registrar::addLine(string courseName, string cwid, char grade) {
 	// TO BE COMPLETED
-
+	try {
+		//updating an already existing student.
+		student &s = getStudent(cwid);
+		s.addCourseGrade(courseName, grade);
+	}
+	catch {
+		indiv[size] = student(cwid);
+		indiv[size].addCourseGrade(courseName, grade);
+		size++;
+	}
 }
 
