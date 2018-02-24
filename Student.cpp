@@ -3,18 +3,15 @@
 #include <iostream>
 
 Student::Student() {
-	// TO BE COMPLETED
-	
-	//creates student obj.
-	//initializes its cwid to nothing.
-	
+	//COMPLETED
+	cwid = " "; //assigns student blank cwid.
+	courseNum = 0; //sets amount of courses to 0;
 }
 
-Student::Student(const string &cwid) {
-	// TO BE COMPLETED
-	
-	//refereneces cwid
-	//starts student obj courses to 0.
+Student::Student(const string &tcwid) {
+	//COMPLETED
+	cwid=tcwid;
+	courseNum = 0;
 }
 
 
@@ -24,17 +21,17 @@ string Student::getCWID() {
 }
 
 void Student::addCourseGrade (const string &courseName, char grade) {
-	// TO BE COMPLETED
-	
-	//allocates new mem for course name and grade.
-	//increases course grade amount by 1.
+	//COMPLETED
+	//allocates new mem for courseName and grade.
+	Tcourse[courseNum]= courseName;
+	Ccourse[courseNum]= grade;
+	courseNum++; //increases course grade amount by 1.
 }
 
  
 double Student::getGPA() { 
 	//COMPLETED.
 	//gpa is calculated from adding all values and dividing by the number of courses.
-	
 	char grade;
 	double gpa;
 	double sum = 0, total = 0;
