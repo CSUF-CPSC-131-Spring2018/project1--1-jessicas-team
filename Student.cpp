@@ -16,10 +16,10 @@ Student::Student(const string &cwid) {
 	
 	//refereneces cwid
 	//starts student obj courses to 0.
-
 }
 
-string Student::getCWID() {
+//COMPLETE.
+string Student::getCWID() { 
 	return cwid;
 }
 
@@ -28,11 +28,10 @@ void Student::addCourseGrade (const string &courseName, char grade) {
 	
 	//allocates new mem for course name and grade.
 	//increases course grade amount by 1.
-
 }
 
-double Student::getGPA() {
-	// TO BE COMPLETED
+//COMPLETE. 
+double Student::getGPA() { 
 	//gpa is calculated from adding all values and dividing by the number of courses
 	char grade;
 	double gpa;
@@ -69,12 +68,13 @@ double Student::getGPA() {
 // CS 253		B
 // CS 131		B
 // GPA = 2.6667
-void Student::printTranscript() {
+
+//COMPLETE.
+void Student::printTranscript() { 
 	cout<< "TRANSCRIPT FOR CWID= " << cwid <<endl; //Displays CWID of student.
-	for (int i=0; i <= courseNum; i++) //Displays name of course and corresponding grade.
+	for (int i=0; i <= courseNum; i++) //Loops through the number of courses.
 	{
-		cout<< courseName[i] << " " << courseGrade[i] << endl;
+		cout<< courseName[i] << " " << courseGrade[i] << endl; //Displays name of course and corresponding grade.
 	}
 	cout<< "GPA= " << getGPA() << endl;//Displays GPA of Current Student.
 }
-
