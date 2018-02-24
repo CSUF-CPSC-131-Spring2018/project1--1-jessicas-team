@@ -30,16 +30,17 @@ void Registrar::readTextfile(string filename) {
 // getStudent must throw an exception if cwid is invalid
 Student& Registrar::getStudent(string cwid) const {
 	// TO BE COMPLETED
-	int index=0;
-	while(index<size){		//add size in default set 0
-		if(student[i].getCWID==CWID){
-			return student[i];
-		}
-		else {
-			index++;
-		}
-	}
-	throw invalid_arguement("cwid is Invalid");
+	//student *ptr;
+	//ptr = head;
+	//bool found;
+	//found = false;
+	//while ((ptr != NULL) && (found == false)){
+	//if(ptr-> getCWID() == tcwid){
+	//found = true; }
+	//else {
+	//throw invalid_argument ("Invalid CWID"); }
+	//if (found == true) {
+	//return *ptr } }
 }
 
 // process a line from the text file
@@ -54,6 +55,11 @@ void Registrar::addLine(string courseName, string cwid, char grade) {
 	}
 	catch (excepion &e)
 	{
+		//student *t= new student(cwid);
+		//t-> setNext(head);
+		//head = t;
+		//size++;
+		//t-> addCourseGrade(courseName, grade); 
 		indiv[size] = student(cwid);
 		indiv[size].addCourseGrade(courseName, grade);
 		size++;
@@ -63,7 +69,8 @@ void Registrar::addLine(string courseName, string cwid, char grade) {
 Registrar::Registrar() //default constructor.
 	// TO BE COMPLETED
 {
-	
+	//size = 0;
+	//head = nullptr;
 }
 
 Registrar::~Registrar() //destructor.
