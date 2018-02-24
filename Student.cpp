@@ -10,7 +10,7 @@ Student::Student() {
 
 Student::Student(const string &tcwid) {
 	//COMPLETED
-	cwid=tcwid;
+	cwid = tcwid; //references cwid to a variable. 
 	courseNum = 0;
 }
 
