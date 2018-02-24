@@ -20,9 +20,7 @@ Student::Student(const string &cwid) {
 }
 
 string Student::getCWID() {
-	// TO BE COMPLETED
-	
-	//return cwid;
+	return cwid;
 }
 
 void Student::addCourseGrade (const string &courseName, char grade) {
@@ -35,13 +33,34 @@ void Student::addCourseGrade (const string &courseName, char grade) {
 
 double Student::getGPA() {
 	// TO BE COMPLETED
-	
-	//basically how you wrote your code in your notes.
-	//switch statement to apply a value to a grade.
-	//adds up all the values.
 	//gpa is calculated from adding all values and dividing by the number of courses
-	//returns gpa.
-
+	char grade;
+	double gpa;
+	double sum = 0, total = 0;
+	
+	for (int i=0; i < courseNum; i++)
+	{
+		grade = Cgrade[i]; //switch statement to apply a value to a grade.
+		switch grade {
+			case 'A':
+				sum = 4;
+				break;
+			case 'B':
+				sum = 3;
+				break;
+			case 'C':
+				sum = 2;
+				break;
+			case 'D':
+				sum = 1;
+				break;
+			default:
+				sum = 0;
+		}
+		total = total + sum; //adds up all the values.
+	}
+	gpa = total / courseNum;
+	return gpa;//Returns GPA.
 }
 
 // print transcript in this (sample) format:
@@ -51,13 +70,11 @@ double Student::getGPA() {
 // CS 131		B
 // GPA = 2.6667
 void Student::printTranscript() {
-	// TO BE COMPLETED
-	
-	//Checks for student objs.
-	//cout<< "TRANSCRIPT FOR CWID= " << cwid<<endl; 
-	//Calls student cwid and displays the classes and grades as is in the txt.file.
-	//FOR SURE THERES A LOOP IN HERE SOMEWHERE?!?
-	//cout<< "GPA= " << getGPA() << endl;
-
+	cout<< "TRANSCRIPT FOR CWID= " << cwid <<endl; //Displays CWID of student.
+	for (int i=0; i <= courseNum; i++) //Displays name of course and corresponding grade.
+	{
+		cout<< courseName[i] << " " << courseGrade[i] << endl;
+	}
+	cout<< "GPA= " << getGPA() << endl;//Displays GPA of Current Student.
 }
 
