@@ -52,7 +52,8 @@ void Registrar::addLine(string courseName, string cwid, char grade) {
 		student &s = getStudent(cwid);
 		s.addCourseGrade(courseName, grade);
 	}
-	catch {
+	catch (excepion &e)
+	{
 		indiv[size] = student(cwid);
 		indiv[size].addCourseGrade(courseName, grade);
 		size++;
