@@ -7,7 +7,6 @@ Student::Student() {
 	
 	//creates student obj.
 	//initializes its cwid to nothing.
-	//gives student 
 	
 }
 
@@ -18,8 +17,9 @@ Student::Student(const string &cwid) {
 	//starts student obj courses to 0.
 }
 
-//COMPLETE.
+
 string Student::getCWID() { 
+	//COMPLETED.
 	return cwid;
 }
 
@@ -30,9 +30,11 @@ void Student::addCourseGrade (const string &courseName, char grade) {
 	//increases course grade amount by 1.
 }
 
-//COMPLETE. 
+ 
 double Student::getGPA() { 
-	//gpa is calculated from adding all values and dividing by the number of courses
+	//COMPLETED.
+	//gpa is calculated from adding all values and dividing by the number of courses.
+	
 	char grade;
 	double gpa;
 	double sum = 0, total = 0;
@@ -69,8 +71,9 @@ double Student::getGPA() {
 // CS 131		B
 // GPA = 2.6667
 
-//COMPLETE.
+
 void Student::printTranscript() { 
+	//COMPLETED.
 	cout<< "TRANSCRIPT FOR CWID= " << cwid <<endl; //Displays CWID of student.
 	for (int i=0; i <= courseNum; i++) //Loops through the number of courses.
 	{
