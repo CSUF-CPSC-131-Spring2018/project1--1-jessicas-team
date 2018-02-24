@@ -60,3 +60,14 @@ void Registrar::addLine(string courseName, string cwid, char grade) {
 	}
 }
 
+Registrar::Registrar() //default constructor.
+	// TO BE COMPLETED
+{
+	
+}
+
+Registrar::~Registrar() //destructor.
+	// TO BE COMPLETED
+{
+	
+}
