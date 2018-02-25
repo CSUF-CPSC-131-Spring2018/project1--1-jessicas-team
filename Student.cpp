@@ -76,7 +76,7 @@ double Student::getGPA() {
 void Student::printTranscript() { 
 	// TO BE COMPLETED.
 	cout<< "TRANSCRIPT FOR CWID= " << cwid <<endl; //Displays CWID of student.
-	for (int i=0; i <= courseNum; i++) //Loops through the number of courses.
+	for (int i=0; i < courseNum; i++) //Loops through the number of courses.
 	{
 		cout<< courseName[i] << " " << Cgrade[i] << endl; //Displays name of course and corresponding grade.
 	}
