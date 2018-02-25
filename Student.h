@@ -3,7 +3,7 @@
 
 using namespace std;
 
-class Registrar;
+
 
 class Student {
 public:
@@ -22,5 +22,5 @@ private:
 	char Cgrade[50], grade;
 	string Tcourse[50];
 
-	friend class Registrar;
+	
 };
