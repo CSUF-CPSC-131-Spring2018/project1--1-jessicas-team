@@ -3,6 +3,8 @@
 
 using namespace std;
 
+class Registrar;
+
 class Student {
 public:
 	Student(); // default constructor
@@ -11,18 +13,14 @@ public:
 	double getGPA(); // calculate and return GPA
 	void printTranscript(); // print transcript - see Student.cpp for the format
 	string getCWID(); // return the CWID of this student
-	//Student *getNext(); //returns next pointer //DELETE LATER
-	//void setNext(Student *tnext); //linked list operations //DELETE LATER
 private:
 	// any private member variables and methods go here
 	// TO BE COMPLETED
-	//Student *next; //DELETE LATER
-	string cwid; 
-	int courseNum;
+	string courseName, cwid;
+	double gpa;
+	int courseNum, num = 0, count;
+	char Cgrade[50], grade;
 	string Tcourse[50];
-	char Cgrade[50];
-	
-	double gpa; //Probably unnecessary.
-	
-	friend class Registrar; //Probably unnecessary.
+
+	friend class Registrar;
 };
