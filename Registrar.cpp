@@ -13,13 +13,13 @@ Registrar::Registrar()
 	size = 0;
 	
 }
-//
-//Registrar::~Registrar()
-//{
-//	/*delete[] indiv;
-//	indiv = NULL;
-//*/
-//}
+
+Registrar::~Registrar()
+{
+	delete[] indiv;
+	indiv = NULL;
+
+}
 
 
 // Load information from a text file with the given filename
