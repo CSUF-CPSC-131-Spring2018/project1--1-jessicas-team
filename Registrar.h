@@ -20,8 +20,8 @@ private:
 	// other variables required to implement the public member functions
 	// TO BE COMPLETED
 	
-	string coursName, cwid; //possibly unnecessary.**
-	char grade; //possibly unnecessary.**
+	string coursName, cwid; //possibly unnecessary.
+	char grade; //possibly unnecessary.
 	int size = 0; //Number of Students in the class. //Can probably set to 0 in the .cpp instead of .h 
 	const int max = 50000; //possibly unnecessary.**
 	student *indiv; //keep this
