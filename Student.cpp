@@ -6,14 +6,14 @@ Student::Student() {
 	//COMPLETED
 	cwid = " "; //assigns student blank cwid.
 	courseNum = 0; //sets amount of courses to 0;
-	// next = nullptr;
+	// next = nullptr; //DELETE LATER
 }
 
 Student::Student(const string &tcwid) {
 	//COMPLETED
 	cwid = tcwid; //references cwid to a variable. 
 	courseNum = 0;
-	// next -> nullptr;
+	// next -> nullptr; //DELETE LATER
 }
 
 
@@ -53,6 +53,9 @@ double Student::getGPA() {
 			case 'D':
 				sum = 1;
 				break;
+			case 'F':
+				sum = 0;
+				break;
 			default:
 				sum = 0;
 		}
@@ -80,8 +83,8 @@ void Student::printTranscript() {
 	cout<< "GPA= " << getGPA() << endl;//Displays GPA of Current Student.
 }
 
-//Student *getNext(){
+//Student *getNext(){ //DELETE LATER
 //return next; }
 
-//void Student::getNext(Student *tnext){
+//void Student::getNext(Student *tnext){ //DELETE LATER
 //next= tnext; }
