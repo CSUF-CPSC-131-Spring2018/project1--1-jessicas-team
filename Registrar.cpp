@@ -33,7 +33,7 @@ void Registrar::readTextfile(string filename) {
 		string cwid;
 		char grade;
 		while (myfile >> courseName >> cwid >> grade) {
-			 /*cout << cwid << " " << grade << endl;*/
+			 cout << cwid << " " << grade << endl;
 			addLine(courseName, cwid, grade);
 		}
 		myfile.close();
