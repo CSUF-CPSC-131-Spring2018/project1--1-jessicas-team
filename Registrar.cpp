@@ -49,7 +49,7 @@ Student& Registrar::getStudent(string cwid) const {
 	int index = 0;
 	
 	while (index < size)
-	{		//add size in default set 0
+	{		
 		
 		if (indiv[index].getCWID() == cwid) {
 			return indiv[index];	//return indiv[i]
@@ -75,7 +75,7 @@ Registrar & Registrar::operator=(const Registrar & reg)
 	return *this;
 }
 
-Registrar::Registrar(const Registrar & reg) : max(50000)
+Registrar::Registrar(const Registrar & reg) 
 {
 	indiv = new Student[max];
 	 courseName= reg.courseName;
@@ -99,14 +99,14 @@ void Registrar::addLine(string courseName, string cwid, char grade) {
 		//We are updating an already exisiting student
 		Student &s = getStudent(cwid);
 		s.addCourseGrade(courseName, grade);
-		/*s.courseNum++;*/
+		
 	}
 	catch (exception &e)
 	{
 		indiv[size] = Student(cwid);
 		
 		indiv[size].addCourseGrade(courseName, grade);
-		/*indiv[size].courseNum++;*/
+		
 		size++;
 		
 
