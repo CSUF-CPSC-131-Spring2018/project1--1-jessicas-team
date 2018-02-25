@@ -11,12 +11,12 @@ public:
 	double getGPA(); // calculate and return GPA
 	void printTranscript(); // print transcript - see Student.cpp for the format
 	string getCWID(); // return the CWID of this student
-	//Student *getNext(); //returns next pointer
-	//void setNext(Student *tnext); //linked list operations
+	//Student *getNext(); //returns next pointer //DELETE LATER
+	//void setNext(Student *tnext); //linked list operations //DELETE LATER
 private:
 	// any private member variables and methods go here
 	// TO BE COMPLETED
-	//Student *next;
+	//Student *next; //DELETE LATER
 	string cwid; 
 	int courseNum;
 	string Tcourse[50];
