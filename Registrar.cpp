@@ -30,6 +30,7 @@ void Registrar::readTextfile(string filename) {
 // getStudent must throw an exception if cwid is invalid
 Student& Registrar::getStudent(string cwid) const {
 	// TO BE COMPLETED
+	//DELETE LATER
 	//student *ptr;
 	//ptr = head;
 	//bool found;
@@ -55,6 +56,7 @@ void Registrar::addLine(string courseName, string cwid, char grade) {
 	}
 	catch (excepion &e)
 	{
+		//DELETE LATER
 		//student *t= new student(cwid);
 		//t-> setNext(head);
 		//head = t;
