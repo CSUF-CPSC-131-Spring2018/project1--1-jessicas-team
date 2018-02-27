@@ -94,7 +94,7 @@ Registrar::Registrar(const Registrar & reg)
 //if student exists, it updates and adds course grade to their info 
 //if student does not exist, then adds student to student array and updates size
 void Registrar::addLine(string courseName, string cwid, char grade) {
-	// TO BE COMPLETED
+	
 	try {
 		//We are updating an already exisiting student
 		Student &s = getStudent(cwid);
