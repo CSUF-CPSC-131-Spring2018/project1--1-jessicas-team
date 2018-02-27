@@ -20,9 +20,7 @@ public:
 	Registrar(const Registrar &reg);
 	
 private:
-	// Add private member variables for your class along with any 
-	// other variables required to implement the public member functions
-	// TO BE COMPLETED
+	
 	
 	string courseName, cwid;
 	string filename;
