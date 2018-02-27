@@ -45,14 +45,14 @@ void Registrar::readTextfile(string filename) {
  /*return Student object corresponding to a given CWID
  getStudent must throw an exception if cwid is invalid*/
 Student& Registrar::getStudent(string cwid) const {
-	// TO BE COMPLETED
+	
 	int index = 0;
 	
 	while (index < size)
 	{		
 		
 		if (indiv[index].getCWID() == cwid) {
-			return indiv[index];	//return indiv[i]
+			return indiv[index];	
 		}
 		else {
 			index++;
