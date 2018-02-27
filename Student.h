@@ -8,7 +8,7 @@ using namespace std;
 class Student {
 public:
 	Student(); // default constructor
-	Student(const string &cwid); // constructor with parameter
+	Student(const string &tcwid); // constructor with parameter
 	void addCourseGrade(const string &courseName, char grade); // add course name and grade to student's record
 	double getGPA(); // calculate and return GPA
 	void printTranscript(); // print transcript - see Student.cpp for the format
