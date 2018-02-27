@@ -25,7 +25,7 @@ private:
 	string courseName, cwid;
 	string filename;
 	char grade;
-	int size=0;
+	int size;
 	const int max=50000;
 	Student* indiv;
 	
