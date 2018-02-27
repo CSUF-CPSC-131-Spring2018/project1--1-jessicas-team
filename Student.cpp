@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <iomanip>
+
 Student::Student() {
 	cwid = "";
 	courseNum = 0;
@@ -23,7 +24,7 @@ void Student::addCourseGrade(const string &courseName, char grade) {
 }
 
 double Student::getGPA() {
-	char grade;								//grades associated with CWID, need to gather all?
+	char grade;								
 	double gpa = 0, sum = 0, total=0;
 
 	
@@ -65,7 +66,7 @@ double Student::getGPA() {
 // CS 131		B
 // GPA = 2.6667
 void Student::printTranscript() {
-	// TO BE COMPLETED
+	
 
 	cout << "\nTRANSCRIPT FOR CWID = " << cwid << endl;
 	for (int i = 0; i < (courseNum); i++){
