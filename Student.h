@@ -17,7 +17,7 @@ private:
 	
 	string courseName, cwid;
 	double gpa;
-	int courseNum, num = 0, count;
+	int courseNum;
 	char grade;
 	
 	string *Tcourse = new string[50];
